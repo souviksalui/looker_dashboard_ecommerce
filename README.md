@@ -1,8 +1,8 @@
 # looker_dashboard_ecommerce
 End-to-end E-commerce BI solution featuring a Looker Studio dashboard and a realistic 120k+ row synthetic dataset (2023-2025). Analyzes full order lifecycle—from marketing attribution and sales performance to complex logistics, shipping costs, and returns.
 
-📌 Project Overview
-This dataset represents the end-to-end operations of a fictional Indian e-commerce brand, "ShopEasy," covering a 3-year period (Jan 1, 2023 – Dec 31, 2025). It includes 120,000+ orders and granular details on sales, customers, inventory, and logistics.
+# 📌 Project Overview
+This dataset represents the end-to-end operations of a fictional Indian e-commerce brand, "AAX", covering a 3-year period (Jan 1, 2023 – Dec 31, 2025). It includes 120,000+ orders and granular details on sales, customers, inventory, and logistics.
 
 This data is designed to power the Marketing & Sales Dashboard in Looker Studio, enabling analysis of:
 
@@ -14,9 +14,9 @@ Logistics Efficiency: Delivery success rates, shipping costs, and partner perfor
 
 Product Metrics: Margins, stock levels, and price elasticity.
 
-🔗 Dashboard Link: View Looker Studio Report
+🔗 Dashboard Link: View Looker Studio Report - https://lookerstudio.google.com/reporting/d484be16-ff50-4028-89ec-29104d4d1285
 
-📂 File Descriptions & Schema
+# 📂 File Descriptions & Schema
 1. orders.csv (Fact Table)
 Description: The central transaction table containing individual line items for every order.
 
@@ -90,8 +90,8 @@ price update timestamp: When the price changed (contains NA for unchanged items)
 
 stock update timestamp: When inventory was last audited.
 
-📊 How to Join These Tables (Data Model)
-For your Looker Studio dashboard to work correctly, create the following relationships:
+# 📊 How to Join These Tables (Data Model)
+For Looker Studio dashboard to work correctly, create the following relationships:
 
 Sales Analysis:
 
@@ -105,7 +105,7 @@ Create a calculated field in orders called Parent Order ID by removing the /1, /
 
 Join orders.Parent Order ID ↔ logistics.order id (Many-to-One).
 
-💡 Key Metrics You Can Calculate
+# 💡 Key Metrics to Calculate
 Average Order Value (AOV): Sum(order amount) / Count Distinct(order id)
 
 Return Rate: Count(order id where return reason is not NA) / Total Orders
@@ -116,14 +116,14 @@ On-Time Delivery Rate: Count(orders where status = 'delivered') / Total Orders
 
 Customer Lifetime Value (CLV): Sum(order amount) grouped by customer name.
 
-⚠️ Notes for Analysis
+# ⚠️ Notes for Analysis
 "NA" Values: Standard placeholder for nulls in this dataset (e.g., non-members have NA in membership fields). Ensure your dashboard treats these as "No Value" or filters them out.
 
 Partial Deliveries: If qty shipped < qty ordered, it indicates a stockout or logistics issue.
 
 Rejection Costs: Rejected orders have shipping charges = 0 in this dataset, simulating a model where the vendor absorbs the cost elsewhere or isn't charged for failed pickups.
 
-📋 Dataset Summary Table
+# 📋 Dataset Summary Table
 Metric	Details
 Date Range	Jan 1, 2023 – Dec 31, 2025 (3 Years)
 Total Order Lines	~120,560 (Projected)
@@ -134,7 +134,7 @@ Logistics Providers	5 (Delhivery, DTDC, Xpressbees, Nimbus, SelfShip)
 Order Types	50% Single Item / 50% Multi-Item Baskets
 Key Features	Market Basket Analysis (/1 suffixes), Partial Deliveries, Returns Logic, Membership Tiers
 Total Revenue	~ ₹ 250 Cr+ (Estimated based on Unit Price & Volume)
-📂 File-by-File Statistics
+# 📂 File-by-File Statistics
 File Name	Rows (Approx)	Columns	Key Usage
 orders.csv	~180k - 200k	14	Sales KPIs: Revenue, AOV, Product Performance, Customer Trends.
 logistics.csv	~120k	9	Ops KPIs: Shipping Costs, Courier Performance, Delivery Status.
