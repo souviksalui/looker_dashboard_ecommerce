@@ -133,21 +133,22 @@ Rejection Costs: Rejected orders have shipping charges = 0 in this dataset, simu
 
 
 # 📋 Dataset Summary Table
-Metric	Details
-Date Range	Jan 1, 2023 – Dec 31, 2025 (3 Years)
-Total Order Lines	~120,560 (Projected)
-Total Customers	8,000 Unique Customers
-Product Catalog	1,200 Unique SKUs
-Avg. Daily Orders	~110 Orders/Day (Min 100 guaranteed)
-Logistics Providers	5 (Delhivery, DTDC, Xpressbees, Nimbus, SelfShip)
-Order Types	50% Single Item / 50% Multi-Item Baskets
-Key Features	Market Basket Analysis (/1 suffixes), Partial Deliveries, Returns Logic, Membership Tiers
-Total Revenue	~ ₹ 250 Cr+ (Estimated based on Unit Price & Volume)
+| Metric              | Details                                                                                   |
+| ------------------- | ----------------------------------------------------------------------------------------- |
+| Date Range          | Jan 1, 2023 – Dec 31, 2025 (3 Years)                                                      |
+| Total Order Lines   | ~120,560 (Projected)                                                                      |
+| Total Customers     | 8,000 Unique Customers                                                                    |
+| Product Catalog     | 1,200 Unique SKUs                                                                         |
+| Avg. Daily Orders   | ~110 Orders/Day (Min 100 guaranteed)                                                      |
+| Logistics Providers | 5 (Delhivery, DTDC, Xpressbees, Nimbus, SelfShip)                                         |
+| Order Types         | 50% Single Item / 50% Multi-Item Baskets                                                  |
+| Key Features        | Market Basket Analysis (/1 suffixes), Partial Deliveries, Returns Logic, Membership Tiers |
+| Total Revenue       | ~ ₹ 250 Cr+ (Estimated based on Unit Price & Volume)                                      |
 # 📂 File-by-File Statistics
-File Name	Rows (Approx)	Columns	Key Usage
-orders.csv	~180k - 200k	14	Sales KPIs: Revenue, AOV, Product Performance, Customer Trends.
-logistics.csv	~120k	9	Ops KPIs: Shipping Costs, Courier Performance, Delivery Status.
-products.csv	1,200	8	Inventory: Margins, Stock Levels, Category Analysis.
-customers.csv	8,000	7	CRM: Loyalty Tiers, Regional Distribution, Wallet Balance.
-product_history.csv	~500	7	Trends: Price Fluctuation & Stock Movement History.
-
+| File Name           | Rows (Approx) | Columns | Key Usage                                                       |
+| ------------------- | ------------- | ------- | --------------------------------------------------------------- |
+| orders.csv          | ~180k - 200k  | 14      | Sales KPIs: Revenue, AOV, Product Performance, Customer Trends. |
+| logistics.csv       | ~120k         | 9       | Ops KPIs: Shipping Costs, Courier Performance, Delivery Status. |
+| products.csv        | 1,200         | 8       | Inventory: Margins, Stock Levels, Category Analysis.            |
+| customers.csv       | 8,000         | 7       | CRM: Loyalty Tiers, Regional Distribution, Wallet Balance.      |
+| product_history.csv | ~500          | 7       | Trends: Price Fluctuation & Stock Movement History.             |
