@@ -123,6 +123,15 @@ Partial Deliveries: If qty shipped < qty ordered, it indicates a stockout or log
 
 Rejection Costs: Rejected orders have shipping charges = 0 in this dataset, simulating a model where the vendor absorbs the cost elsewhere or isn't charged for failed pickups.
 
+<img width="800" height="360" alt="image" src="https://github.com/user-attachments/assets/eb0eea8e-5bba-4075-bd59-e06890002961" />
+
+
+<img width="959" height="470" alt="image" src="https://github.com/user-attachments/assets/82e21c20-69f0-4579-b121-a967dc3f0a51" />
+
+<img width="956" height="464" alt="image" src="https://github.com/user-attachments/assets/0ed88ffe-c6df-4d1a-a301-fe5f0c31817b" />
+
+
+
 # 📋 Dataset Summary Table
 Metric	Details
 Date Range	Jan 1, 2023 – Dec 31, 2025 (3 Years)
